@@ -1,0 +1,60 @@
+﻿body {
+	font-family: verdana;
+	width: 20cm;
+	height: 28.7cm;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #ccc;
+	padding: .5cm;
+}
+
+div.container { position: absolute; }
+
+h1 { }
+
+
+table {
+	border-collapse:collapse;
+}
+
+td { vertical-align: top; }
+th {
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	border-bottom: 1px solid #ccc;
+}
+.invoice-meta {
+	text-align: right;
+	width: 7.5cm;
+	padding-right: .4cm;
+	padding-top: 1.45cm;
+}
+
+.invoice-receipient {
+	width: 8cm;
+	padding-top: .5cm;
+}
+
+.company {
+	width: 5cm;
+	font-size: .8em;
+}
+
+.invoice-data {
+}
+
+.moms td {
+	padding-top: .5cm;
+	padding-bottom: .5cm;
+}
+
+.ialt td {
+	border-top: 1px solid #ccc;
+}
+
+
+footer {
+	position: relative;
+	padding-top: 10cm;
+}
