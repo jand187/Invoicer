@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="da" xmlns="http://www.w3.org/1999/xhtml" ng-app="invoiceApp">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,38 @@
 		<link href="content/bootstrap.css" rel="stylesheet" />
 		<link href="content/site.css" rel="stylesheet" />
 	</head>
-	<body class="panel-body">
-		
+	<body ng-controller="invoiceController">
 		<div class="container">
-			<div></div>
+			<form class="form-horizontal" action="index.html">
+				<fieldset>
+					<div>
+						<label for="periodStart">
+							Startdato:
+							<input id="periodStart" type="date" class="form-control" ng-model="invoice.periodStart" />
+						</label>
+					</div>
+					<div>
+						<label for="periodEnd">
+							Slutdato:
+							<input id="periodEnd" type="date"  class="form-control" ng-model="invoice.periodEnd" />
+						</label>
+					</div>
+					<div>
+						<label for="hours">
+							Antal timer:
+							<input id="hours" class="form-control" ng-model="invoice.hours" />
+						</label>
+					</div>
+					<div>
+						<label for="invoiceNumber">
+							Fakturanummer:
+							<input id="invoiceNumber" class="form-control" ng-model="invoice.invoiceNumber" />
+						</label>
+					</div>
+				</fieldset>
+
+				<button class="form-control btn-primary" type="button" ng-click="create()">Opret</button>
+			</form>
 
 
 			<footer>
@@ -24,6 +52,8 @@
 
 	<script src="scripts/jquery-1.9.0.min.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
-	<script src="scripts/app.js"></script>
+	<script src="scripts/angular.js"></script>
 
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers.js"></script>
 </html>
