@@ -4,10 +4,75 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<link href="content/invoice.css" rel="stylesheet" />
+		<style>
+			html {
+				width: 21cm;
+				height: 29.7cm;
+			}
+
+			body {
+				font-family: verdana;
+				width: 21cm;
+				height: 27.7cm;
+				margin-left: auto;
+				margin-right: auto;
+				/* 
+					border: 1px solid #ccc;
+				*/
+				padding: 2cm;
+			}
+
+			div.container { position: absolute; }
+
+			h1 { }
+
+
+			table { border-collapse: collapse; }
+
+			td { vertical-align: top; }
+
+			th {
+				text-align: left;
+				font-style: normal;
+				font-weight: normal;
+				border-bottom: 1px solid #ccc;
+			}
+
+			.invoice-meta {
+				text-align: right;
+				width: 7.5cm;
+				padding-right: .4cm;
+				padding-top: 1.45cm;
+			}
+
+			.invoice-receipient {
+				width: 8cm;
+				padding-top: .5cm;
+			}
+
+			.company {
+				width: 5cm;
+				font-size: .8em;
+			}
+
+			.invoice-data { }
+
+			.moms td {
+				padding-top: .5cm;
+				padding-bottom: .5cm;
+			}
+
+			.ialt td { border-top: 1px solid #ccc; }
+
+
+			footer {
+				position: relative;
+				padding-top: 10cm;
+			}
+		</style>
 	</head>
 	<body>
-		<table border="0">
+		<table border="0" style="width: 100%">
 			<tr>
 				<td colspan="3"><h1>Faktura</h1></td>
 			</tr>
@@ -49,10 +114,10 @@
 		<div class="invoice-data">
 			<table style="width: 100%">
 				<thead>
-				<th>Text</th>
-				<th>Antal</th>
-				<th>Pris</th>
-				<th>I alt</th>
+					<th>Text</th>
+					<th>Antal</th>
+					<th>Pris</th>
+					<th>I alt</th>
 				</thead>
 				<tbody>
 					<tr>
